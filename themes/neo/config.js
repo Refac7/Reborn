@@ -8,8 +8,7 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: '即将开始服务', url: '/article/9' },
-    { title: '返回主站', url: 'https://www.neotec.uk/' }
+    { title: ' ', url: '/#' },
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -18,7 +17,7 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: 'Build next idea even faster.',
+  HEO_HERO_TITLE_1: 'Blog System R1',
   HEO_HERO_TITLE_2: 'By the makers of Tailwind CSS.',
   HEO_HERO_TITLE_3: 'Beautifully designed, expertly crafted components and templates, built by the makers of Tailwind CSS. The perfect starting point for your next project.',
 

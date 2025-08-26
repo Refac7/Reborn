@@ -1,11 +1,10 @@
 import { siteConfig } from '@/lib/config'
 import CONFIG from '../config'
-import Link from 'next/link'
 
 const Hero = () => {
   return (
     <div className='w-full select-none mb-8 relative z-0'>
-      {/* PC端版本 - 保持不变 */}
+      {/* PC端版本 */}
       <div className='max-w-[86rem] w-full mx-auto px-5'>
         <div className={`
           rounded-3xl w-full hidden md:block h-80
@@ -15,8 +14,7 @@ const Hero = () => {
           shadow-lg hover:shadow-xl transition-shadow duration-300
           wow fadeInUp
         `} data-wow-delay="0.1s">
-          <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/20 to-transparent dark:from-[#1a1a1a]/80 dark:via-[#1a1a1a]/20 pointer-events-none"></div>
-
+          
           <div className='z-20 flex flex-col absolute top-12 left-12 max-w-lg'>
             <h1 className='text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-100 dark:to-gray-300'>
               {siteConfig('HEO_HERO_TITLE_1', null, CONFIG)}
@@ -38,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* 移动端版本 - 更新版 */}
+      {/* 移动端版本 */}
       <div className='md:hidden w-full px-5'>
         <div className={`
           w-full h-64 overflow-hidden
@@ -52,14 +50,12 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/20 to-transparent dark:from-[#1a1a1a]/80 dark:via-[#1a1a1a]/20 pointer-events-none"></div>
 
           <div className='z-20 flex flex-col absolute top-8 left-6 right-6'>
-            <h1 className='text-4xl font-extrabold mb-3 text-gray-800 dark:text-gray-100'>
+            <div className='text-4xl font-extrabold mb-3 text-gray-800 dark:text-gray-100'>
               {siteConfig('HEO_HERO_TITLE_1', null, CONFIG)}
-            </h1>
-
-            {/* 简约装饰线 */}
-            <div className="w-12 h-1 bg-gradient-to-r from-[#00e599] to-[#00af92] mb-4 rounded-full"></div>
-
-            <p className='text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4'>
+            </div>
+            <span className='text-xl'>{siteConfig('HEO_HERO_TITLE_2', null, CONFIG)}</span>
+            <br></br>
+            <p className='text-sm font-bold text-gray-600 dark:text-gray-300 leading-relaxed mb-4'>
               {siteConfig('HEO_HERO_TITLE_3', null, CONFIG)}
             </p>
           </div>
