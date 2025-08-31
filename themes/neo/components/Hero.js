@@ -53,7 +53,7 @@ const Hero = () => {
             <div className='text-4xl font-extrabold mb-3 text-gray-800 dark:text-gray-100'>
               {siteConfig('HEO_HERO_TITLE_1', null, CONFIG)}
             </div>
-            <span className='text-xl'>{siteConfig('HEO_HERO_TITLE_2', null, CONFIG)}</span>
+            <span className='text-xl text-gray-600 dark:text-gray-300'>{siteConfig('HEO_HERO_TITLE_2', null, CONFIG)}</span>
             <br></br>
             <p className='text-sm font-bold text-gray-600 dark:text-gray-300 leading-relaxed mb-4'>
               {siteConfig('HEO_HERO_TITLE_3', null, CONFIG)}
